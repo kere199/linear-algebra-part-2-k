@@ -6,65 +6,60 @@ from pathlib import Path
 
 home_dir = Path(__file__).parent.resolve()
 
+
 answer = {
     "task1": {
         "det_A_terms": sorted([
-            ### YOUR CODE HERE ###
+            -1,-1
         ]),
         "det_A_1_terms": sorted([
-            ### YOUR CODE HERE ###
+            -2,0
         ]),
         "det_A_2_terms": sorted([
-            ### YOUR CODE HERE ###
+            -2,0
         ]),
-        "x": np.array(
-            ### YOUR CODE HERE ###
-        ),
-        "cofactors": np.array(
-            ### YOUR CODE HERE ###
-        ),
-        "inverse": np.array(
-            ### YOUR CODE HERE ###
-        )
+        "x": np.array([1, 1], dtype=np.int64),
+        "cofactors": np.array([
+            [1, -1],
+            [-1, 1]
+        ], dtype=np.int64),
+        "inverse": np.array([
+            [0.5, -0.5],
+            [-0.5, 0.5]
+        ], dtype=np.float64)
     },
     "task2": {
         "det_A_terms": sorted([
-            ### YOUR CODE HERE ###
+            2,3
         ]),
         "det_A_1_terms": sorted([
-            ### YOUR CODE HERE ###
+            2,8
         ]),
         "det_A_2_terms": sorted([
-            ### YOUR CODE HERE ###
+            8,3
         ]),
         "x": np.array(
-            ### YOUR CODE HERE ###
+            [2,1]
         ),
         "cofactors": np.array(
-            ### YOUR CODE HERE ###
-        ),
+            [[-2, 3], 
+             [-1, -1]], 
+            dtype=np.int64),
         "inverse": np.array(
-            ### YOUR CODE HERE ###
-        )
+            [[-0.4, -0.2], 
+             [0.6, -0.2]])
     },
     "task3": {
-        "det_A_terms": sorted([
-            ### YOUR CODE HERE ###
-        ]),
-        "det_A_1_terms": sorted([
-            ### YOUR CODE HERE ###
-        ]),
-        "det_A_2_terms": sorted([
-            ### YOUR CODE HERE ###
-        ]),
-        "x": np.array(
-            ### YOUR CODE HERE ###
+        "det_A_terms": ([-6, -2, -2, 1, 2, 3]),
+        "det_A_1_terms": ([-12, -4, 0, 0, 3, 9]),
+        "det_A_2_terms": ([-9, -4, 0, 0, 3, 6]),
+        "x": np.array([1,1,0]
         ),
-        "cofactors": np.array(
-            ### YOUR CODE HERE ###
+        "cofactors": np.array([]
+### YOUR CODE HERE ###
         ),
-        "inverse": np.array(
-            ### YOUR CODE HERE ###
+        "inverse": np.array([]
+### YOUR CODE HERE ###
         )
     }
 }
